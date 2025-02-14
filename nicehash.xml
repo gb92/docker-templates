@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>gb92-nicehash</Name>
+	<Beta>true</Beta>
+    <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+    <Repository>gb92/nicehash-unraid</Repository>
+    <Registry>https://github.com/gb92/nicehash-unraid</Registry>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/gb92/nicehash-unraid</GitHub>
+    <Support></Support>
+    <Project>https://www.nicehash.com/</Project>
+    <Overview>The NiceHash Docker Miner is a free docker image designed for data centers equipped with high-end GPUs, enabling efficient monetization of idle server time without disrupting core operations. NiceHash Docker Miner facilitates profit switching among multiple GPU-minable algorithms and offers payouts in Bitcoin.</Overview>
+    <TemplateURL>https://raw.githubusercontent.com/gb92/docker-templates/main/nicehash.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/gb92/nicehash-unraid/main/images/nicehash_logo_small_light.png</Icon>
+    <Date>2025-02-14</Date>
+    <Changes></Changes>
+    <Config Name="Variable: NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Description="Specify whether this container can use all Nvidia driver capabilities for transcoding, if you have a Nvidia card set this to 'all'." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Description="Specify the Nvidia GPU device id for transcoding, format will be 'GPU-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: MINING_ADDRESS" Target="MINING_ADDRESS" Default="" Description="Nicehash mining address" />
+    <Config Name="Variable: MINING_WORKER_NAME" Target="MINING_WORKER_NAME" Default="unraid-docker" Description="Name of the worker to be displayed in rig manager" />
+</Container>
